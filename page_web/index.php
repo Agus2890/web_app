@@ -382,7 +382,7 @@
 
           <div class="col-lg-4 box featured" data-aos="fade-up">
             <h3>6 MESES</h3>
-            <h4>$150<span></span></h4>
+            <h4>$200<span></span></h4>
             <ul>
              <li><i class="bx bx-check"></i>Facturacion Electronica</li>
               <li><i class="bx bx-check"></i>Catalogo de productos</li>
@@ -704,7 +704,7 @@
               <div class="form-group">
                 <select class="form-control" name="txtpaquete" required>
                   <option value="1 paquete">Paquete 1 $50 1 mes</option>
-                  <option value="2 paquete">Paquete 2 $150 6 meses</option>
+                  <option value="2 paquete">Paquete 2 $200 6 meses</option>
                   <option value="3 paquete">Paquete 3 $300 12 meses</option>
                 </select>
               </div>
