@@ -52,7 +52,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.php">Odoo Android</a></h1>
+        <h1 class="text-light"><a href="index.php">App Android</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -60,14 +60,14 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.php">Home</a></li>
-          <li><a href="#features">App Features</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">F.A.Q</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#features">Caracteristicas</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#pricing">Precios</a></li>
+          <!-- <li><a href="#faq">F.A.Q</a></li> -->
+          <li><a href="#contact">Contacto</a></li>
           <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
 
-          <li class="get-started"><a href="#features">Get Started</a></li>
+          <!-- <li class="get-started"><a href="#features">Get Started</a></li> -->
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -81,14 +81,15 @@
       <div class="row">
         <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
           <div>
-            <h1>App landing page template</h1>
-            <h2>Lorem ipsum dolor sit amet, tota senserit percipitur ius ut, usu et fastidii forensibus voluptatibus. His ei nihil feugait</h2>
-            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
-            <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
+            <h1>El poder de tu sistema en una aplicación móvil</h1>
+            <h2>Administre su negocio al alcance de su mano. Sus datos y funciones de Odoo disponibles la App.</h2>
+            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i>Descargar App</a>
+            <!-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a> -->
+            <a href="#" class="download-btn" data-toggle="modal" data-target="#car_paquete"></i>Solicitar APK</a> 
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+          <img src="assets/movile/app4.jpg" class="img-fluid" alt="" style="max-width: 35%;">
         </div>
       </div>
     </div>
@@ -102,8 +103,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>App Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Caracteristicas</h2>
+          <p>Con AppAndroid puede administrar todas esas tareas, y mucho más, en tiempo real, desde su dispositivo móvil consulte sus Facturas, clientes productos en tiempo real.</p>
         </div>
 
         <div class="row no-gutters">
@@ -112,25 +113,25 @@
               <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up">
                   <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4>Facturación Electronica</h4>
+                  <p>Consulta tus facturas desde cualquier lugar desde su Celular, descargar tu PDF Y XML o reenviar por correo directamente desde la App</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Consultar Clientes</h4>
+                  <p>Registre sus clientes desde la App en cualquier lugar</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4>Consultar Productos</h4>
+                  <p>Actualise su precio de venta o crear un nuevo productos desde tu celular.</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  <h4>Monitorea Folios</h4>
+                  <p>Consulte el numero de Folios que cuenta para emitor sus Facturas y solicitalo desde la Aapp</p>
                 </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                <!-- <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-atom"></i>
                   <h4>Molestiae dolor</h4>
                   <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
@@ -139,12 +140,12 @@
                   <i class="bx bx-id-card"></i>
                   <h4>Explicabo consectetur</h4>
                   <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/features.svg" class="img-fluid" alt="">
+            <img src="assets/movile/app4.jpg" class="img-fluid" alt="" style="max-height: 70%;max-width: 65%;">
           </div>
         </div>
 
@@ -160,24 +161,23 @@
             <img src="assets/img/details-1.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-4" data-aos="fade-up">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>¡Obtén tu aplicación ahora!.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+             Simplifique su negocio en un segundo..
             </p>
             <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
-              <li><i class="icofont-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+              <li><i class="icofont-check"></i> Consulta Facturas, enviar por email, obtener XML Y PDF.</li>
+              <li><i class="icofont-check"></i> Registre tus sus productos  y clientes desde cuarquier lugar</li>
+              <li><i class="icofont-check"></i> Consulte sus Folios y solicitelo desde la App.</li>
+              <!-- <li><i class="icofont-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li> -->
             </ul>
-            <p>
+            <!-- <p>
               Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
-            </p>
+            </p> -->
           </div>
         </div>
 
-        <div class="row content">
+        <!-- <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
             <img src="assets/img/details-2.png" class="img-fluid" alt="">
           </div>
@@ -196,9 +196,9 @@
               Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="row content">
+        <!-- <div class="row content">
           <div class="col-md-4" data-aos="fade-right">
             <img src="assets/img/details-3.png" class="img-fluid" alt="">
           </div>
@@ -217,9 +217,9 @@
               Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="row content">
+        <!-- <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
             <img src="assets/img/details-4.png" class="img-fluid" alt="">
           </div>
@@ -240,13 +240,13 @@
               <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Details Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery">
       <div class="container">
 
         <div class="section-title">
@@ -270,10 +270,11 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section> -->
+    <!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -351,56 +352,56 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Precios</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row no-gutters">
 
           <div class="col-lg-4 box" data-aos="fade-right">
-            <h3>Free</h3>
-            <h4>$0<span>per month</span></h4>
+            <h3>1 MES</h3>
+            <h4>$50<span>POR UN MES</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-              <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              <li><i class="bx bx-check"></i>Facturacion Electronica</li>
+              <li><i class="bx bx-check"></i>Catalogo de productos</li>
+              <li><i class="bx bx-check"></i>Catalogo de clientes</li>
+              <li><i class="bx bx-check"></i>Ventas</li>
+              <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+              <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn" data-toggle="modal" data-target="#car_paquete">SOLICITAR</a>
           </div>
 
           <div class="col-lg-4 box featured" data-aos="fade-up">
-            <h3>Business</h3>
-            <h4>$29<span>per month</span></h4>
+            <h3>6 MESES</h3>
+            <h4>$150<span></span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+             <li><i class="bx bx-check"></i>Facturacion Electronica</li>
+              <li><i class="bx bx-check"></i>Catalogo de productos</li>
+              <li><i class="bx bx-check"></i>Catalogo de clientes</li>
+              <li><i class="bx bx-check"></i>Ventas</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn" data-toggle="modal" data-target="#car_paquete">SOLICITAR</a>
           </div>
 
           <div class="col-lg-4 box" data-aos="fade-left">
-            <h3>Developer</h3>
-            <h4>$49<span>per month</span></h4>
+            <h3>12 MESES</h3>
+            <h4>$300<span></span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="bx bx-check"></i>Facturacion Electronica</li>
+              <li><i class="bx bx-check"></i>Catalogo de productos</li>
+              <li><i class="bx bx-check"></i>Catalogo de clientes</li>
+              <li><i class="bx bx-check"></i>Ventas</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn" data-toggle="modal" data-target="#car_paquete">SOLICITAR</a>
           </div>
 
         </div>
@@ -409,7 +410,7 @@
     </section><!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <!-- <section id="faq" class="faq section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -469,22 +470,23 @@
         </div>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section>-->
+    <!--End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Contacto</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-lg-6 info" data-aos="fade-up">
+              <!-- <div class="col-lg-6 info" data-aos="fade-up">
                 <i class="bx bx-map"></i>
                 <h4>Address</h4>
                 <p>A108 Adam Street,<br>New York, NY 535022</p>
@@ -493,36 +495,36 @@
                 <i class="bx bx-phone"></i>
                 <h4>Call Us</h4>
                 <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
-              </div>
+              </div> -->
               <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="200">
                 <i class="bx bx-envelope"></i>
-                <h4>Email Us</h4>
-                <p>contact@example.com<br>info@example.com</p>
+                <h4>Email</h4>
+                <p>info.sistemas2017@gmail.com</p>
               </div>
               <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="300">
                 <i class="bx bx-time-five"></i>
-                <h4>Working Hours</h4>
-                <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+                <h4>Horario de antención</h4>
+                <p> Lunes a Domingo de 08:00 a 201:00 horas</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+            <form action="<?php echo URL ?>index/register_contacto" method="post" role="form" class="FormularioAjax" data-aos="fade-up" id="from_contacto">
               <div class="form-group">
-                <input placeholder="Your Name" type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input placeholder="Your Name" type="text" name="txtname" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                <input placeholder="Your Email" type="email" class="form-control" name="txtemail" id="email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <input placeholder="Subject" type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
-              </div>
+              </div> -->
               <div class="form-group">
-                <textarea placeholder="Message" class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea placeholder="Message" class="form-control" name="txtmessage" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -530,7 +532,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
           </div>
 
@@ -544,7 +546,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter" data-aos="fade-up">
+    <!-- <div class="footer-newsletter" data-aos="fade-up">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -556,13 +558,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up">
+          <!-- <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up">
             <h3>Appland</h3>
             <p>
               A108 Adam Street <br>
@@ -582,8 +584,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
-          </div>
-
+          </div> -->
+<!-- 
           <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
             <h4>Our Services</h4>
             <ul>
@@ -593,11 +595,11 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
+          </div> -->
 
           <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
             <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -612,15 +614,15 @@
     </div>
 
     <div class="container py-4">
-      <div class="copyright">
+      <!-- <div class="copyright">
         &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
-      </div>
+      </div> -->
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -639,6 +641,10 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="../assets/js/jquery-2.0.1.js"> </script>
+
+  <script src="../assets/sweetalert/sweetalert.js"></script>
+  <link rel="stylesheet" href="../assets/sweetalert/sweetalert.css">
+
 
 </body>
 
@@ -677,8 +683,82 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="car_paquete" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <!-- Modal content no 1-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center form-title">Solicitar</h4>
+      </div>
+      <div class="modal-body padtrbl">
+        <div class="login-box-body">
+          <p class="login-box-msg"></p>
+          <div class="form-group">
+            <form name="from_paquete" id="from_paquete" method="post" action="<?php echo URL ?>index/register_paquete" class="FormularioAjax">
+              <div class="form-group">
+              Email a enviar el apk.
+                <input class="form-control" id="txt_mail_p" name="txt_mail_p" type="text" autocomplete="off" required />
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="txtpaquete" required>
+                  <option value="1 paquete">Paquete 1 $50 1 mes</option>
+                  <option value="2 paquete">Paquete 2 $150 6 meses</option>
+                  <option value="3 paquete">Paquete 3 $300 12 meses</option>
+                </select>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <button type="submit" name="enviar" id="enviarpaq" class="btn btn-block btn-primary">Solicitar</button>
+                    
+                    <div id="resultado"></div>
+                    <br/>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--/ Modal box-->
 <script type="text/javascript">
+
+$(".FormularioAjax").bind("submit",function(e){
+    e.preventDefault();
+    var form=$(this);
+    var data = new FormData(this);
+    // window.location =location.pathname + location.search;
+    $.ajax({
+      type: $(this).attr("method"),
+        url: $(this).attr("action"),
+        datafrom:$(this).attr("data-form"),
+        data:data,//$(this).serialize(),
+        enctype:$(this).attr("enctype"),
+        contentType: false,
+        cache: false,
+        processData: false,
+        beforeSend: function(){
+        },
+        complete:function(data){
+        },
+        success: function(data){
+
+            swal("Aviso","Enviado Correctamente", "success");
+            $('#from_contacto')[0].reset();
+            $("#from_paquete")[0].reset();
+          
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          swal("Aviso",jqXHR.responseText, "error");
+        }
+    });
+    return false;
+});
+
 $(".FormularioAjaxFrom").bind("submit",function(e){
     e.preventDefault();
     var form=$(this);

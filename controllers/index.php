@@ -38,5 +38,15 @@ class Index extends Controller{
         header('Content-type: application/json; charset=utf-8');
         echo json_encode($jsondata);
     }
+    function register_contacto(){
+        $data=$this->model->register_contacto();
+        header('Content-type: application/json; charset=utf-8');
+        echo json_encode($data);
+    }
+    function register_paquete(){
+        $data=$this->model->register_paquete();
+        header('Content-type: application/json; charset=utf-8');
+        echo json_encode($data);
+    }
 }
 ?>

@@ -21,6 +21,49 @@ class index_model extends Model{
             echo $e->getMessage();
         }
     }
+    function register_contacto(){
+        $jsondata = array();
+        if($_POST['txtname'] && $_POST['txtemail'] && $_POST['txtmessage'] ){
+            $query = $this->db->connect()->prepare('INSERT INTO contacto (name, mail, mensaje) VALUES(:name, :mail, :mensaje)');
+            try{
+                $query->execute([
+                    'name' => $_POST['txtname'],
+                    'mail' => $_POST['txtemail'],
+                    'mensaje' => $_POST['txtmessage'],
+                ]);
+                $jsondata['success'] = false;
+                $jsondata['message'] = "Registrado Correctament";
+            }catch(PDOException $e){
+                $jsondata['success'] = false;
+                $jsondata['message'] = $e->getMessage();
+            }
+        }else{
+            $jsondata['success'] = false;
+            $jsondata['message'] = "Registrado Correctament";
+        }
+        return $jsondata;
+    }
+    function register_paquete(){
+        $jsondata = array();
+        if($_POST['txtpaquete'] && $_POST['txt_mail_p']  ){
+            $query = $this->db->connect()->prepare('INSERT INTO paquetes (mail, paquete) VALUES(:mail, :paquete)');
+            try{
+                $query->execute([
+                    'paquete' => $_POST['txtpaquete'],
+                    'mail' => $_POST['txt_mail_p'],
+                ]);
+                $jsondata['success'] = false;
+                $jsondata['message'] = "Registrado Correctament";
+            }catch(PDOException $e){
+                $jsondata['success'] = false;
+                $jsondata['message'] = $e->getMessage();
+            }
+        }else{
+            $jsondata['success'] = false;
+            $jsondata['message'] = "Registrado Correctament";
+        }
+        return $jsondata;
+    }
 
 
 }

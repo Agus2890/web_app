@@ -20,3 +20,16 @@ CREATE TABLE users (
     password TINYTEXT,
     UNIQUE KEY(user)
 );
+
+CREATE TABLE contacto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name CHAR(100)  NULL,
+    mail CHAR(100)  NULL,
+    mensaje TINYTEXT
+);
+CREATE TABLE paquetes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    mail CHAR(100)  NULL,
+    paquete CHAR(100)  NULL,
+    datestop TIMESTAMP null
+);
