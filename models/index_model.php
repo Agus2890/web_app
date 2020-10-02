@@ -14,7 +14,7 @@ class index_model extends Model{
     }
     public function get_contacto(){
         try{
-            $query = $this->db->connect()->query('SELECT * FROM clientes');
+            $query = $this->db->connect()->query('SELECT * FROM contacto');
             return $query->fetchAll(PDO::FETCH_OBJ);
         }catch(PDOException $e){
             return [];
@@ -22,7 +22,7 @@ class index_model extends Model{
     }
     public function get_paquete(){
         try{
-            $query = $this->db->connect()->query('SELECT * FROM clientes');
+            $query = $this->db->connect()->query('SELECT * FROM paquetes');
             return $query->fetchAll(PDO::FETCH_OBJ);
         }catch(PDOException $e){
             return [];

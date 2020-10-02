@@ -8,10 +8,10 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Dashboard Template · Bootstrap</title>
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/dashboard.css" rel="stylesheet">
-<script src="assets/js/jquery-2.0.1.js"></script>
+<link href="<?php echo URL ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo URL ?>assets/dist/css/bootstrap.css" rel="stylesheet">
+<link href="<?php echo URL ?>assets/css/dashboard.css" rel="stylesheet">
+<script src="<?php echo URL ?>assets/js/jquery-2.0.1.js"></script>
 
 
     <style>
