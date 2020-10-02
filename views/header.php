@@ -71,6 +71,18 @@
               Usuarios
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo URL ?>index/msg_contacto">
+              <span data-feather="users"></span>
+              Contacto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo URL ?>index/msg_paquete">
+              <span data-feather="users"></span>
+              Paquete
+            </a>
+          </li>
         
         </ul>
       </div>

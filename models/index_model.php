@@ -12,6 +12,22 @@ class index_model extends Model{
             return [];
         }
     }
+    public function get_contacto(){
+        try{
+            $query = $this->db->connect()->query('SELECT * FROM clientes');
+            return $query->fetchAll(PDO::FETCH_OBJ);
+        }catch(PDOException $e){
+            return [];
+        }
+    }
+    public function get_paquete(){
+        try{
+            $query = $this->db->connect()->query('SELECT * FROM clientes');
+            return $query->fetchAll(PDO::FETCH_OBJ);
+        }catch(PDOException $e){
+            return [];
+        }
+    }
     public function delete($id){
         $query = $this->db->connect()->prepare('DELETE FROM users WHERE id = :id');
         try{

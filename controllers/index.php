@@ -13,6 +13,18 @@ class Index extends Controller{
         $this->view->render('index/index');
         // header("Location: page_web/index.html");
     }
+    function msg_contacto(){
+        $msg_contacto  = $this->model->get_contacto();
+        $this->view->msg_contacto = $msg_contacto;        
+        $this->view->render('index/mgs_contacto');
+        // header("Location: page_web/index.html");
+    }
+    function msg_paquete(){
+        $msg_paquete  = $this->model->get_paquete();
+        $this->view->msg_paquete = $msg_paquete;        
+        $this->view->render('index/mgs_paquete');
+        // header("Location: page_web/index.html");
+    }
 
     function delete_table($id){
         $jsondata = array();
