@@ -11,6 +11,9 @@ CREATE TABLE clientes (
     token TINYTEXT,
     UNIQUE KEY(user,token)
 );
+
+ALTER TABLE clientes ADD email CHAR(100)  NULL;
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name CHAR(100)  NULL,
