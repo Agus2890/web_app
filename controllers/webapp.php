@@ -2,7 +2,8 @@
 class webapp extends Controller{
 	
 	function __construct(){
-		parent::__construct();
+        parent::__construct();
+        
 	}
 
 	function index(){
@@ -15,6 +16,5 @@ class webapp extends Controller{
         header('Content-type: application/json; charset=utf-8');
         echo json_encode($data);
     }
-
 }
 ?>

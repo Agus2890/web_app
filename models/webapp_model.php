@@ -2,6 +2,7 @@
 class webapp_model extends Model{
 	function __construct(){
         parent::__construct();
+        date_default_timezone_set("America/Mexico_City");
     }
     function user_exist(){
         $jsondata = array();
@@ -36,7 +37,7 @@ class webapp_model extends Model{
                     $jsondata['success'] = false;
                     $jsondata['status'] = $data->active;
                     $jsondata['datestop'] = $data->datestop;
-                    $jsondata['datenow'] = date("Y-m-d H:i:s");
+                    $jsondata['datenow'] = localtime(date("Y-m-d H:i:s"),true);
                     $jsondata['message'] = "La Fecha de su suscripcion a vencido";
                 }
             }else{
