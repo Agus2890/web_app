@@ -37,7 +37,7 @@ class webapp_model extends Model{
                     $jsondata['success'] = false;
                     $jsondata['status'] = $data->active;
                     $jsondata['datestop'] = $data->datestop;
-                    $jsondata['datenow'] = localtime(date("Y-m-d H:i:s"),true);
+                    $jsondata['datenow'] = date("Y-m-d H:i:s");
                     $jsondata['message'] = "La Fecha de su suscripcion a vencido";
                 }
             }else{
