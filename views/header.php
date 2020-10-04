@@ -13,6 +13,10 @@
 <link href="<?php echo URL ?>assets/css/dashboard.css" rel="stylesheet">
 <script src="<?php echo URL ?>assets/js/jquery-2.0.1.js"></script>
 
+<script src="<?php echo URL;?>assets/sweetalert/sweetalert.js"></script>
+<link rel="stylesheet" href="<?php echo URL;?>assets/sweetalert/sweetalert.css">
+
+
 
     <style>
       .bd-placeholder-img {
@@ -72,15 +76,21 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="<?php echo URL ?>versionapk">
+              <span data-feather="users"></span>
+              Version APK
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo URL ?>index/msg_contacto">
               <span data-feather="users"></span>
-              Contacto
+              Mensajes
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo URL ?>index/msg_paquete">
               <span data-feather="users"></span>
-              Paquete
+              CRM
             </a>
           </li>
         

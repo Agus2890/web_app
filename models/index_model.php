@@ -28,8 +28,8 @@ class index_model extends Model{
             return [];
         }
     }
-    public function delete($id){
-        $query = $this->db->connect()->prepare('DELETE FROM users WHERE id = :id');
+    public function delete($id,$table){
+        $query = $this->db->connect()->prepare('DELETE FROM '.$table.' WHERE id = :id');
         try{
             $query->execute(['id' => $id]);
             return true;

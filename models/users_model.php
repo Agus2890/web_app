@@ -13,7 +13,7 @@ class users_model extends Model{
         }
     }
     function register_users(){
-        $query = $this->db->connect()->prepare('INSERT INTO users (name, user, active,password) VALUES(:name, :user, :active,:password)');
+        $query = $this->db->connect()->prepare('INSERT INTO version_apk (name, user, active,password) VALUES(:name, :user, :active,:password)');
         try{
             $query->execute([
                 'name' => $_POST['txtname'],

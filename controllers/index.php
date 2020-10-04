@@ -31,7 +31,7 @@ class Index extends Controller{
         try{
             $table=(isset($_GET["table"]) and $_GET["table"]) ? $_GET["table"]:false;
             if($table){
-                $res=$this->model->delete($id);
+                $res=$this->model->delete($id,$table);
                 if ($res){
                     $jsondata['success'] = true;
                     $jsondata['message'] = 'Eliminado Correctamente';

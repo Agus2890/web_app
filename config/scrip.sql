@@ -36,3 +36,12 @@ CREATE TABLE paquetes (
     paquete CHAR(100)  NULL,
     datestop TIMESTAMP null
 );
+CREATE TABLE version_apk (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name CHAR(100)  NULL,
+    mandatory boolean not null default 1,
+    versioncode INTEGER  NOT NULL,
+    versionname CHAR(100)  not NULL,
+    download_url TINYTEXT,
+    UNIQUE KEY(versioncode)
+);

@@ -74,13 +74,14 @@ class webapp_model extends Model{
             $query->execute(['user' => $user,'password'=>$password]);
             $data=$query->fetch(PDO::FETCH_OBJ);
             if($data ){
+                $query_app = $this->db->connect()->query('SELECT * FROM version_apk WHERE versioncode=(SELECT MAX(versioncode) FROM version_apk)');
+                $data_apk=$query_app->fetch(PDO::FETCH_OBJ);
                 $jsondata['success'] = true;
                 $jsondata['message'] = "Usuario autentificado correctamente";
-                $jsondata['mandatory'] =1;
-                $jsondata['versionCode'] =3318;
-                $jsondata['versionName'] ='3.3.1.8';
-                $jsondata['downloadURL'] ='http://189.206.183.110:1390/cecg_app/combu_go.apk';
-               
+                $jsondata['mandatory'] =$data_apk ? $data_apk->mandatory:'' ;
+                $jsondata['versionCode'] =$data_apk ? $data_apk->versioncode:'' ;
+                $jsondata['versionName'] =$data_apk ? $data_apk->versionname:'' ;
+                $jsondata['downloadURL'] = $data_apk ? $data_apk->download_url:'' ;
             }else{
                 $jsondata['success'] = false;
                 $jsondata['message'] = "No se pudo autentificar su usuario";
