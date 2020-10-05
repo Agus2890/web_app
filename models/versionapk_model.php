@@ -26,7 +26,7 @@ class versionapk_model extends Model{
                         'mandatory' => $_POST['txtoption'],
                         'versioncode' => $_POST['txtversioncode'],
                         'versionname' => $_POST['txtversioname'],
-                        'download_url' => URL.'public/'.(string)$_POST['txtversioncode'].'.apk',
+                        'download_url' => URL.'public/files/'.(string)$_POST['txtversioncode'].'.apk',
                     ]);
                     if($result){
                         $jsondata['success'] = true;

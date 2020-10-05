@@ -37,6 +37,33 @@ class index_model extends Model{
             echo $e->getMessage();
         }
     }
+    function register_cliente(){
+        $jsondata = array();
+        $query = $this->db->connect()->prepare('INSERT INTO clientes (host, user,email,datestart,datestop,active) 
+        VALUES(:host, :user, :email, :datestart, :datestop, :active)');
+        try {
+            $data=$query->execute([
+                'host' => $_POST['txtip'],
+                'user' => $_POST['txtuser'],
+                'email' => $_POST['txtmail'],
+                'datestart' => $_POST['txtdatestart'],
+                'datestop' => $_POST['txtdatestop'],
+                'active' => 1,
+            ]);
+            if($data){
+                $jsondata['success'] = true;
+                $jsondata['message'] = "Registrado Correctamente";
+                $jsondata['redirec'] = URL.'index';
+            }else{
+                $jsondata['success'] = false;
+                $jsondata['message'] = "Error al Registrar";
+            }
+        }catch (PDOException $e) {
+            $jsondata['success'] = false;
+            $jsondata['message'] = $e->getMessage();
+        }
+        return $jsondata;
+    }
     function register_contacto(){
         $jsondata = array();
         if($_POST['txtname'] && $_POST['txtemail'] && $_POST['txtmessage'] ){
