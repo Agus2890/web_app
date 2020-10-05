@@ -1,11 +1,11 @@
 <?php
+ini_set('memory_limit', '-1');
+ini_set('max_execution_time', 300);
 class webapp extends Controller{
 	
 	function __construct(){
         parent::__construct();
-        
 	}
-
 	function index(){
         $data=$this->model->user_exist();
         header('Content-type: application/json; charset=utf-8');
