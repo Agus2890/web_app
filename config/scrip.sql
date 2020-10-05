@@ -5,14 +5,13 @@ CREATE TABLE clientes (
     host CHAR(100)  NULL,
     name CHAR(100)  NULL,
     user CHAR(100)  NULL,
+    email CHAR(100)  NULL,
     datestart TIMESTAMP null,
     datestop TIMESTAMP null,
     active boolean not null default 0,
-    token TINYTEXT,
+    token CHAR(250)  NULL,
     UNIQUE KEY(user,token)
 );
-
-ALTER TABLE clientes ADD email CHAR(100)  NULL;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
