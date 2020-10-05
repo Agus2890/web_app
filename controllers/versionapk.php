@@ -2,8 +2,8 @@
 ini_set('memory_limit', '-1');
 ini_set('max_execution_time', 300);
 
-ini_set('upload_max_filesize',100M);
-ini_set('post_max_size',100M);
+ini_set('upload_max_filesize',100);
+ini_set('post_max_size',100);
 class versionapk extends Controller{
     function __construct(){
         parent::__construct();
