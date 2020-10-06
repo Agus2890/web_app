@@ -11,7 +11,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-6">
             <label >Version Code</label>
-            <input type="number"  class="form-control" name="txtversioncode" id="txtversioncode" required>
+            <input type="number"  class="form-control" step="any" name="txtversioncode" id="txtversioncode" required>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
             <label >Version Name</label>
