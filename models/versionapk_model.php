@@ -21,12 +21,12 @@ class versionapk_model extends Model{
                 $tipo = $_FILES['txtapk']['type'];
                 $tamano = $_FILES['txtapk']['size'];
                 if ($_FILES["txtapk"]["type"] == "application/vnd.android.package-archive"){
-                    move_uploaded_file($_FILES['txtapk']['tmp_name'],API_ROOT.'public/'.(string)$_POST['txtversioncode'].'.apk');
+                    move_uploaded_file($_FILES['txtapk']['tmp_name'],API_ROOT.'public/'.$_FILES['txtapk']['tmp_name'].'_'.(string)$_POST['txtversioncode'].'.apk');
                     $result=$query->execute([
                         'mandatory' => $_POST['txtoption'],
                         'versioncode' => $_POST['txtversioncode'],
                         'versionname' => $_POST['txtversioname'],
-                        'download_url' => URL.'public/files/'.(string)$_POST['txtversioncode'].'.apk',
+                        'download_url' => URL.'public/'.$_FILES['txtapk']['tmp_name'].'_'.(string)$_POST['txtversioncode'].'.apk',
                     ]);
                     if($result){
                         $jsondata['success'] = true;

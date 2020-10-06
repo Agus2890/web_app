@@ -44,3 +44,4 @@ CREATE TABLE version_apk (
     download_url TINYTEXT,
     UNIQUE KEY(versioncode)
 );
+ALTER TABLE version_apk MODIFY versioncode  DECIMAL(6,1) NOT NULL;
