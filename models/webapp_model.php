@@ -77,13 +77,15 @@ class webapp_model extends Model{
             $query_app = $this->db->connect()->query('SELECT * FROM version_apk WHERE versioncode=(SELECT MAX(versioncode) FROM version_apk)');
             $res=$data_apk=$query_app->fetch(PDO::FETCH_OBJ);
             if($res){
+                $jsondata['state'] = 1;
                 $jsondata['success'] = true;
-                $jsondata['message'] = "Usuario autentificado correctamente";
-                $jsondata['mandatory'] =$data_apk ? $data_apk->mandatory:'' ;
-                $jsondata['versionCode'] =$data_apk ? $data_apk->versioncode:'' ;
-                $jsondata['versionName'] =$data_apk ? $data_apk->versionname:'' ;
-                $jsondata['downloadURL'] = $data_apk ? $data_apk->download_url:'' ;
+                $jsondata['odoo']['message'] = "Usuario autentificado correctamente";
+                $jsondata['odoo']['mandatory'] =$data_apk ? $data_apk->mandatory:'' ;
+                $jsondata['odoo']['versionCode'] =$data_apk ? $data_apk->versioncode:'' ;
+                $jsondata['odoo']['versionName'] =$data_apk ? $data_apk->versionname:'' ;
+                $jsondata['odoo']['downloadURL'] = $data_apk ? $data_apk->download_url:'' ;
             }else{
+                $jsondata['state'] = 0;
                 $jsondata['success'] = false;
                 $jsondata['message'] = "No se pudo autentificar su usuario";
             }
@@ -94,6 +96,7 @@ class webapp_model extends Model{
             //     $jsondata['message'] = "No se pudo autentificar su usuario";
             // }
         } catch (PDOException $e) {
+            $jsondata['state'] = 0;
             $jsondata['success'] = false;
             $jsondata['message'] = $e->getMessage();
         }
