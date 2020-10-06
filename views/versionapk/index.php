@@ -1,3 +1,21 @@
+<style type="text/css">
+    .show {
+    position: relative;
+    }
+    .show:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(<?php echo URL ?>assets/img/loading.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        content: "";
+    }
+</style>
 <?php require 'views/header.php';?>
 <main role="main" id="main_index_tree" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">

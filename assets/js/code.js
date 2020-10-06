@@ -17,8 +17,12 @@ $(function(){
             processData: false,
 
             beforeSend: function(){
+                $("#div_conten").addClass('show');
+                $("#btn_confirm").text("Registrando...");
             },
             complete:function(data){
+                $("#div_conten").removeClass('show');
+                $("#btn_confirm").text("Confirmar");
             },
             success: function(data){
                 if(data.success){

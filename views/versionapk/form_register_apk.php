@@ -24,7 +24,7 @@
     </div>
     <div class="row">
         <div class="btn_basic_user col-sm-12 col-12 mt-4">
-            <button class="btn btn-primary" type="submit">Confirmar</button> 
+            <button class="btn btn-primary" type="submit" id="btn_confirm">Confirmar</button> 
             <button class="btn btn-outline-secondary" type="button">Cancel</button> 
         </div>
     </div>
