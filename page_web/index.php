@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <?php 
     require '../config/core.php';
     session_start();
@@ -8,15 +8,13 @@
     }
   
     ?>
-    
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Aplicación Movile para Odoo Facturación</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <meta content="¡Obtenga lo mejor de Odoo en su dispositivo móvil! Odoo es un conjunto de aplicaciones empresariales de código abierto que le ayudan a hacer crecer su negocio." name="descriptison">
+  <meta content="Odoo,OpenErp,Aplicacion Movil para odoo" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
