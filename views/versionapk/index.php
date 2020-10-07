@@ -28,6 +28,7 @@
             <thead>
               <tr>
                 <!-- <th>Nombre</th> -->
+                <th>Fecha Actualizacion</th>
                 <th>Obligatorio</th>
                 <th>Version Code</th>
                 <th>Version Name</th>
@@ -40,7 +41,7 @@
             foreach ($this->versionapk as $row) {
             ?>
             <tr  data-id="<?php echo $row->id;?>" data-table="version_apk" id="<?php echo $row->id;  ?>">
-                <!-- <td><?php echo $row->name; ?></td> -->
+                <td><?php echo $row->date; ?></td> 
                 <td><?php echo $row->mandatory; ?></td>
                 <td><?php echo $row->versioncode; ?></td>
                 <td><?php echo $row->versionname; ?></td>

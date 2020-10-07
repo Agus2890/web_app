@@ -45,3 +45,4 @@ CREATE TABLE version_apk (
     UNIQUE KEY(versioncode)
 );
 ALTER TABLE version_apk MODIFY versioncode  DECIMAL(6,1) NOT NULL;
+ALTER TABLE version_apk ADD COLUMN date TIMESTAMP NULL;

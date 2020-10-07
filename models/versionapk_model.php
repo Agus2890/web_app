@@ -14,8 +14,8 @@ class versionapk_model extends Model{
     function register_apk(){
         $jsondata = array();
         try {
-            $query = $this->db->connect()->prepare('INSERT INTO version_apk (mandatory, versioncode, versionname,download_url) 
-            VALUES(:mandatory, :versioncode, :versionname,:download_url)');
+            $query = $this->db->connect()->prepare('INSERT INTO version_apk (mandatory, versioncode, versionname,download_url,date) 
+            VALUES(:mandatory, :versioncode, :versionname,:download_url,:date)');
             if(!empty($_FILES['txtapk']['name'])){
                 $image_upload=$_FILES['txtapk']['name'];
                 $tipo = $_FILES['txtapk']['type'];
@@ -27,6 +27,7 @@ class versionapk_model extends Model{
                         'versioncode' => $_POST['txtversioncode'],
                         'versionname' => $_POST['txtversioname'],
                         'download_url' => URL.'public/'.$_FILES['txtapk']['name'],
+                        'date' => date("Y-m-d H:i:s"),
                     ]);
                     if($result){
                         $jsondata['success'] = true;

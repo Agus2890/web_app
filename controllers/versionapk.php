@@ -7,6 +7,7 @@ ini_set('post_max_size',100);
 class versionapk extends Controller{
     function __construct(){
         parent::__construct();
+        date_default_timezone_set("America/Mexico_City");
         session_start();
     }
     function index(){
