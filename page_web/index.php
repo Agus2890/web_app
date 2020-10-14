@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Aplicación Movile para Odoo Facturación</title>
+  <title>Odoo App CRM para Móvil Android. Facturacion</title>
   <meta content="¡Obtenga lo mejor de Odoo en su dispositivo móvil! Odoo es un conjunto de aplicaciones empresariales de código abierto que le ayudan a hacer crecer su negocio." name="descriptison">
   <meta content="Odoo,OpenErp,Aplicacion Movil para odoo" name="keywords">
 
