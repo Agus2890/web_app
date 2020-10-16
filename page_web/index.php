@@ -81,7 +81,7 @@
           <div>
             <h1>El poder de tu sistema en una aplicación móvil</h1>
             <h2>Administre su negocio al alcance de su mano. Sus datos y funciones de Odoo disponibles la App.</h2>
-            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i>Descargar App</a>
+            <a href="#" class="download-btn" id="apk_download"><i class="bx bxl-play-store"></i>Descargar App</a>
             <!-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a> -->
             <a href="#" class="download-btn" data-toggle="modal" data-target="#car_paquete"></i>Solicitar APK</a> 
           </div>
@@ -723,7 +723,25 @@
   </div>
 </div>
 <!--/ Modal box-->
+<?php $vari="'".URL.'webapp/get_apk'."'"?>
 <script type="text/javascript">
+
+
+ $(document).on('click','#apk_download',function(e){
+    $.ajax({
+          type:'GET',
+          url:<?php echo $vari?>,
+          
+          success: function(response){
+              if(response.state==1){
+                window.open(response.odoo.downloadURL, '_blank');
+                //alert(response.odoo.downloadURL);
+              }
+              //setTimeout(function(){window.top.location="index.php?url=human_resourse/view_asistencia", 5000} ); 
+          },
+          
+    });
+});
 
 $(".FormularioAjax").bind("submit",function(e){
     e.preventDefault();

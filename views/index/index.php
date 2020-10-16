@@ -123,7 +123,7 @@
     </main>
     <script type="text/javascript">
       $(document).on('click','#new_client',function(e){
-        $('#div_content').load('views/index/form_register.php',1);
+        $('#div_content').load('views/index/form_register.php');
         $( this ).slideUp();
       });
     </script>
