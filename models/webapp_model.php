@@ -4,6 +4,23 @@ class webapp_model extends Model{
         parent::__construct();
         date_default_timezone_set("America/Mexico_City");
     }
+    function exist_client(){
+        $jsondata = array();
+        if(isset($_POST)){
+            $data=self::user_exist();
+            if($data['success']==true){
+                $jsondata['state'] = 1;
+                $jsondata['message'] ="Usuario activo";
+            }else{
+                $jsondata['state'] = 0;
+                $jsondata['message'] ="Usuario no activo";
+            }
+        }else{
+            $jsondata['state'] = 1;
+            $jsondata['message'] ="No se sercibio nungun datos en POST";
+        }
+        return $jsondata;
+    }
     function user_exist(){
         $jsondata = array();
         $user='';
