@@ -11,6 +11,20 @@ class webapp_model extends Model{
             if($data['success']==true){
                 $jsondata['state'] = 1;
                 $jsondata['message'] ="Usuario activo";
+            }elseif($data['success']==false &&  $data['exit']==false){
+                $query = $this->db->connect()->prepare('INSERT INTO clientes (host, user,datestart,active) 
+                VALUES(:host, :user,:datestart,:active)');
+                $data_create=$query->execute([
+                    'host' => $_POST['host'],
+                    'user' => $_POST['user'],
+                    'datestart' => date("Y-m-d H:i:s"),
+                    'active' => 1,
+                ]);
+                if($data_create){
+                    $jsondata['state'] = 1;
+                    $jsondata['message'] ="Usuario activo";
+                }
+
             }else{
                 $jsondata['state'] = 0;
                 $jsondata['message'] ="Usuario no activo";
@@ -21,6 +35,7 @@ class webapp_model extends Model{
         }
         return $jsondata;
     }
+    
     function user_exist(){
         $jsondata = array();
         $user='';
@@ -46,11 +61,13 @@ class webapp_model extends Model{
             if($data  ){
                 if(date("Y-m-d H:i:s") < $data->datestop ){
                     $jsondata['success'] = true;
+                    $jsondata['exit'] = true;
                     $jsondata['status'] = $data->active;
                     $jsondata['datestop'] = $data->datestop;
                     $jsondata['datenow'] = date("Y-m-d H:i:s");
                     $jsondata['message'] = "Usuario vigente";
                 }elseif(date("Y-m-d H:i:s") > $data->datestop){
+                    $jsondata['exit'] = true;
                     $jsondata['success'] = false;
                     $jsondata['status'] = $data->active;
                     $jsondata['datestop'] = $data->datestop;
@@ -58,11 +75,13 @@ class webapp_model extends Model{
                     $jsondata['message'] = "La Fecha de su suscripcion a vencido";
                 }
             }else{
+                $jsondata['exit'] = false;
                 $jsondata['success'] = false;
                 $jsondata['message'] = "Usuario no encontrado";
             }
         } catch (PDOException $e) {
             $jsondata['success'] = false;
+            $jsondata['exit'] = 'ex';
             $jsondata['message'] = $e->getMessage();
         }
         return $jsondata;
